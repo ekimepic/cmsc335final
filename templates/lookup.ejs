@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saved List Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="/" class="button" id="homebutton">Return to Home</a><br>
+    <h1>Saved List Lookup Form</h1>
+
+    Please enter the name of the shopping list to access<br><br>
+
+    <form action="/lookuplist" method="post" id="lookupform">
+        <fieldset>
+            Grocery List Name:<br>
+            
+            <div id="errormess"></div>
+
+            <input type="text" id="name" name="name" required><br>
+            <input id="submitbutton" type="submit" value="Submit">
+            <input id="result" name="result" type="hidden">
+        </fieldset>
+    </form>
+    <script src="/script.js"></script>
+</body>
+</html>

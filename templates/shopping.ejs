@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopping Form</title>
+</head>
+
+<body>
+    <a href="/" id="homebutton">Return to Home</a><br>
+
+    Please enter your grocery list below! Add as many groceries as you like! Click "Add Another Item" to add another item to your list or "Complete List" to submit the form.<br><br>
+
+    <div class="row">
+        <div class="column">
+            <h3>Shopping Form</h3>
+            <form action="/shoppinglist" method="post" id="shoppingform" name="shoppingform">
+                Grocery Item:<br>
+                <input type="text" id="name" name="name"><br>
+                Quantity:<br>
+                <input type="number" id="quantity" name="quantity" min="1" max="100"><br><br>
+                <button id="add" onclick="add_grocery()" type="button" name="add">Add Another Item</button>&nbsp;&nbsp;<input id="reset" type="reset" value="Clear Form" name="reset"><br>
+                <input id="submitbutton" type="submit" value="Complete List" name="submitbutton">
+                <input type="hidden" name="groceryoutput" id="groceryoutput">
+            </form>
+        </div>
+        <div class="column">
+            <h3>Current Grocery List</h3>
+            <span id="emptymessage">Your grocery list is currently empty!</span>
+            <ol id="grocerylist"></ol>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Save</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="/" class="button" id="homebutton">Return to Home</a><br>
+    <h1>Saving Grocery List Form</h1>
+
+    Please enter the name of your shopping list to save<br><br>
+
+    <form id="saveform" action="/savesuccess" method="post">
+        <fieldset>
+            Grocery List Name:<br>
+
+            <div id="save_result"></div>
+
+            <input type="text" id="name" name="name" required><br>
+            <input id="submitbutton" type="submit" value="Submit"> 
+        </fieldset>
+    </form>
+
+    <script src="/script.js"></script>
+</body>
+</html>
