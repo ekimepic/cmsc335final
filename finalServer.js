@@ -99,10 +99,13 @@ class GroceryList {
       let index = 1;
 
       for (let g of this._list) {
-         returnval += `<tr><td>${index}</td><td>${g.name}</td><td>${g.quantity}</td><td>${g.priceper}</td><td>${g.total}</td></tr>\n`;
+         let price = Math.round(g.priceper*100)/100
+         let total = Math.round(g.total*100)/100
+         returnval += `<tr><td>${index}</td><td>${g.name}</td><td>${g.quantity}</td><td>$${price}</td><td>$${total}</td></tr>\n`;
       }
 
-      returnval += `<tr><td>Total</td><td></td><td></td><td></td><td>${this._total}</td></tr>\n`;
+      let total = Math.round(this._total*100)/100
+      returnval += `<tr id="totalrow"><td>Total</td><td></td><td></td><td></td><td>$${total}</td></tr>\n`;
 
       returnval += "</tbody>\n";
       returnval += "</table>\n";

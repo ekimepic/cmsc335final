@@ -12,9 +12,20 @@
 </head>
 
 <body>
-	<h1><%- name %></h1><br><br>
-	<div>
-		<%- table %>
+	<div class="topnav" id="formnav">
+        <a href="/">Home</a>
+        <a class="active" href="/shopping">Groceries</a>
+        <a href="/lookup">Look Up</a>
+        <a href="/bahaha">About</a>
+    </div>
+
+	<div id="maindiv">
+    <div id="res_div">
+		<h1><%- name %></h1><br><br>
+		<div>
+			<%- table %>
+		</div>
+	</div>
 	</div>
 </body>
 

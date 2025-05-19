@@ -90,6 +90,14 @@ h1 {
     border-radius: 2.5rem;
 }
 
+#res_div {
+    border: #ed8200 solid 5px;
+    background-color: whitesmoke;
+    width: 40rem;
+    padding: 5rem;
+    border-radius: 2.5rem;
+}
+
 #maindiv {
     margin: 0;
     position: absolute;
@@ -150,4 +158,39 @@ table {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 2.5rem;
     padding: 1.5rem;
+}
+
+thead {
+    background-color: #a3f1e5;
+    text-align: left;
+}
+
+td, th {
+    padding: 1.5rem;
+}
+
+#totalrow {
+    font-weight: bold;
+}
+
+#save_result {
+    color: red;
+}
+
+#savepage {
+    background-color: #fad21a;
+    background-image: url("yellow.png");
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 30rem;
+}
+
+#savemessage {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

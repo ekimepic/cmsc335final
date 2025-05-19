@@ -4,14 +4,27 @@
 <head>
     <title>Success Save Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=BioRhyme:wght@200..800&family=Cutive&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="savepage">
+    <div class="topnav" id="formnav">
+        <a href="/">Home</a>
+        <a href="/shopping">Groceries</a>
+        <a class="active" href="/lookup">Look Up</a>
+        <a href="/bahaha">About</a>
+    </div>
+
+    <div id="savemessage">
+
     <h1>Saved Successfully</h1>
 
-    We have successfully saved your grocery list <%- name %>! Thank you so much for choosing Shopperific!
-
-    <a href="/" class="button" id="homebutton">Return to Home</a><br>
+    We have successfully saved your grocery list <%- name %>! <br><br>
+    
+    Thank you so much for choosing Shopperific!
+    </div>
     
 </body>
 </html>
