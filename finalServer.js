@@ -99,7 +99,7 @@ class GroceryList {
       let index = 1;
 
       for (let g of this._list) {
-         returnval += `<tr><td>${index}</td><td>${g.name}</td><td>${g.quantity}</td><td>${g.priceper.toFixed(2)}</td><td>${g.total.toFixed(2)}</td></tr>\n`;
+         returnval += `<tr><td>${index}</td><td>${g.name}</td><td>${g.quantity}</td><td>${g.priceper}</td><td>${g.total}</td></tr>\n`;
       }
 
       returnval += `<tr><td>Total</td><td></td><td></td><td></td><td>${this._total}</td></tr>\n`;
