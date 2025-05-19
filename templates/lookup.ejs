@@ -4,25 +4,37 @@
 <head>
     <title>Saved List Lookup</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=BioRhyme:wght@200..800&family=Cutive&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <a href="/" class="button" id="homebutton">Return to Home</a><br>
-    <h1>Saved List Lookup Form</h1>
+<body id="formbody">
+    <div class="topnav" id="formnav">
+        <a href="/">Home</a>
+        <a href="/shopping">Groceries</a>
+        <a class="active" href="/lookup">Look Up</a>
+        <a href="/bahaha">About</a>
+    </div>
 
-    Please enter the name of the shopping list to access<br><br>
-
-    <form action="/lookuplist" method="post" id="lookupform">
-        <fieldset>
+    <div id="maindiv">
+    <div id="form_div">
+        <div id="form_instructions">
+            <h1>Saved List Lookup Form</h1>
+            Please enter the name of the shopping list to access<br><br>
+        </div>
+        <form action="/lookuplist" method="post" id="lookupform">
             Grocery List Name:<br>
             
             <div id="errormess"></div>
 
-            <input type="text" id="name" name="name" required><br>
-            <input id="submitbutton" type="submit" value="Submit">
+            <input type="text" id="name" name="name" required><br><br>
+            <input id="submitbutton" type="submit" value="Find Grocery List">
             <input id="result" name="result" type="hidden">
-        </fieldset>
-    </form>
+        </form>
+    </div>
+    </div>
+
     <script src="/script.js"></script>
 </body>
 </html>

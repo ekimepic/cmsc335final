@@ -3,32 +3,47 @@
 
 <head>
     <title>Shopping Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=BioRhyme:wght@200..800&family=Cutive&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <a href="/" id="homebutton">Return to Home</a><br>
+<body id="formbody">
+    <div class="topnav" id="formnav">
+        <a href="/">Home</a>
+        <a class="active" href="/shopping">Groceries</a>
+        <a href="/lookup">Look Up</a>
+        <a href="/bahaha">About</a>
+    </div>
 
-    Please enter your grocery list below! Add as many groceries as you like! Click "Add Another Item" to add another item to your list or "Complete List" to submit the form.<br><br>
+    <div id="shoppingdiv">
+    <div id="form_div">
+        <h1>Grocery Form</h1>
 
-    <div class="row">
-        <div class="column">
-            <h3>Shopping Form</h3>
-            <form action="/shoppinglist" method="post" id="shoppingform" name="shoppingform">
-                Grocery Item:<br>
-                <input type="text" id="name" name="name"><br>
-                Quantity:<br>
-                <input type="number" id="quantity" name="quantity" min="1" max="100"><br><br>
-                <button id="add" onclick="add_grocery()" type="button" name="add">Add Another Item</button>&nbsp;&nbsp;<input id="reset" type="reset" value="Clear Form" name="reset"><br>
-                <input id="submitbutton" type="submit" value="Complete List" name="submitbutton">
-                <input type="hidden" name="groceryoutput" id="groceryoutput">
-            </form>
-        </div>
-        <div class="column">
-            <h3>Current Grocery List</h3>
-            <span id="emptymessage">Your grocery list is currently empty!</span>
-            <ol id="grocerylist"></ol>
+        Please enter your grocery list below! Add as many groceries as you like! Click "Add Another Item" to add another item to your list or "Complete List" to submit the form.<br><br>
+
+        <div class="row">
+            <div class="column">
+                <form action="/shoppinglist" method="post" id="shoppingform" name="shoppingform">
+                    Grocery Item:<br>
+                    <input type="text" id="name" name="name"><br>
+                    Quantity:<br>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100"><br><br>
+                    <button id="add" onclick="add_grocery()" type="button" name="add">Add Another Item</button><br>
+                    <input id="submitbutton" type="submit" value="Complete List" name="submitbutton">
+                    <input type="hidden" name="groceryoutput" id="groceryoutput">
+                </form>
+            </div>
+            <div class="column">
+                <h3>Current Grocery List</h3>
+                <span id="emptymessage">Your grocery list is currently empty!</span>
+                <ol id="grocerylist"></ol>
+            </div>
         </div>
     </div>
+    </div>
+
     <script src="/script.js"></script>
 </body>
 </html>

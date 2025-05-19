@@ -1,0 +1,153 @@
+#div-shopperific {
+  /* The image used */
+  background-image: url("/index_img.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60rem;
+}
+
+#index_body {
+    background-color: #a3f1e5;
+    margin: 0px;
+}
+
+body {
+    font-family: "Sniglet", system-ui;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#formbody {
+  background-image: url("/fruits-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat:repeat;
+  background-size: 40rem;
+}
+
+#index_div {
+    background-color: whitesmoke;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#index_info {
+    padding: 25px
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.topnav a {
+    font-weight: 500;
+    float: right;
+    color: #082c46;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.topnav a.active {
+  background-color: #e7cb16;
+  border-radius: 25px;
+  color: white;
+}
+
+.topnav a:hover {
+  color: #12667b;
+}
+
+.topnav a.active:hover {
+    color: white;
+}
+
+#formnav {
+    background-color: whitesmoke;
+}
+
+#form_div {
+    z-index: 1;
+    border: #ed8200 solid 5px;
+    background-color: whitesmoke;
+    width: 40rem;
+    padding: 5rem;
+    border-radius: 2.5rem;
+}
+
+#maindiv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#shoppingdiv {
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Sniglet", system-ui;
+    font-size: 1rem;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #a3f1e5;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-color: #12667b;
+  border-radius: 4px;
+}
+
+button {
+    box-sizing: border-box;
+    font-family: "Sniglet", system-ui;
+    font-size: 1rem;
+    
+    width: 100%;
+    background-color: #a3f1e5;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-color: #12667b;
+    border-radius: 4px;
+}
+
+#errormess {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+}
